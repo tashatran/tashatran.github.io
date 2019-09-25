@@ -1,94 +1,35 @@
-.Tashaleft {
-  font-size: 30px;
-  float: left;
+.navbar-brand{
   background-color: teal;
   color: white;
-  width: 160px;
-  margin-left: 310px;
-  padding: 30px;
-
+  margin:0px 0px 0px 60px;
+  padding:
 }
-
 .links{
-  float: right;
-  height: 100%;
-  padding-top: 45px;
-
-}
-.aboutlink {
-  float: right;
-  margin-left: 20px;
-  margin-right: 100px;
+  text-align: right;
+  margin: 0px 0px 0px 900px;
+  
 
 }
 
-.portfoliolink {
-  color:gray;
-  float: right;
-  margin-left: 50px;
-  margin-right: 30px;
-
-}
-
-.contactlink {
-  float: right;
-  margin-left: 100px;
-  margin-right: 0px
-}
-
-.container {
-  width: 960px;
-  margin: 100px;
-
-}
-
-.header{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color:#ffffff;
-  width: 100%;
-  height: 100px;
-}
-
-.indexsection{
-  float: left;
-  width: 70px;
-}
 body{
   background-image: url(../images/concrete-texture.png);
 }
 
-.aboutme { 
+.aboutme{
+  background-color: white
+}
+h1{
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color:white;
-  color:teal;
-  width: 960px;
-  margin-top: 100px;
-  margin-right: 500px;
-  margin-bottom: 200px;
-  margin-left: 200px;
-  padding-top: 50px;
-  padding-right: 50px;
-  padding-left: 100px;
-  padding-bottom: 400px;
-  
+  color: #4aaaa5
 }
-
-.hr{
-  color:gray;
-}
-p{
-  font-family: Arial, Helvetica, sans-serif;
-  color:gray;
-}
-
 .selfimage {
   transform: rotate(90deg);
   float: left;
   margin: 5px, 2px, 5px, 2px;
-  padding: 50px;
+  padding: 70px;
 }
 img {
-  width: 20%;
-  height: 10%;
+  width: 50%;
+  height: 50%;
 }
 
