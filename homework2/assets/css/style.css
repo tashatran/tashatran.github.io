@@ -1,0 +1,115 @@
+
+
+.navbar-brand{
+  background-color: teal;
+  color: #ffffff;
+  margin:0px 30px 0px 200px;
+  padding: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.links{
+  text-align: right;
+  margin: 0px 0px 0px 750px;
+  color: #777777;
+  
+
+}
+
+body{
+  background-image: url(../images/concrete-texture.png);
+}
+
+.aboutme{
+  background-color: #ffffff;
+  margin: 50px 50px 100px 50px;
+  padding: 20px;
+  padding-bottom: -20px;
+}
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #4aaaa5;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777777;
+}
+.selfimage {
+  transform: rotate(90deg);
+  float: left;
+  margin: 50px, 2px, 50px, 2px;
+  padding: 50px;
+}
+img {
+  width: 50%;
+  height: 50%;
+}
+
+.footer{
+  background-color: #666666;
+  position: sticky;
+  top: 0;
+  height: 50px;
+  border-top: 8px solid #4aaaa5;
+ }
+
+ .formsection{
+   background-color: #ffffff;
+   margin-top: 50px;
+   margin-bottom: 100px;
+   padding: 40px;
+ }
+ .box{
+   width: 840px;
+
+ }
+ .messagebox{
+   width: 840px;
+   height: 200px;
+   margin-bottom: 20px;
+   resize: both;
+ }
+
+ .submit{
+   background-color: #4aaaa5;
+   color: #ffffff;
+ }
+
+ .portfoliopictures{
+   background-color: #ffffff;
+   padding: 60px;
+ }
+
+ .one{
+   float: left;
+   width: 250px;
+   height: 300px;
+   margin: 10px;
+
+ }
+
+ .two{
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+
+ }
+
+ .three{
+   width: 250px;
+   height: 300px;
+   margin: 10px;
+ }
+
+ .four{
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+
+ }
+
+ .five{
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+
+ }
