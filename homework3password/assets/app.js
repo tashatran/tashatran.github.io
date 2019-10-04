@@ -4,24 +4,42 @@ console.log("test")
     // length: 8-128
     // confirms: special, numbers, lowercase, uppercase
 var characters =[];//initialize empty array
+var pwdNumbers =[];
+var pwdLowercase =[];
+var pwdUppercase =[];
 console.log("1",characters)
 
 var passLength= prompt("How long is your password gonna be?")//TODO: input validation
 console.log("passLength",passLength)
 console.log( typeof passLength)//TODO change string to number parseInt()
 
-var special= confirm("do you want special characters");//return boolean
+var special= confirm("do you want special characters?");//return boolean
 if(special){
     // add special characters to the character array
-    var specialChars=["(", ")", "<", ">", "!", "?"]
-    characters= characters.concat(specialChars)
+    var specialChars=["!", "@", "<", ">", "$", "?", "&", "*", "%"];
+    characters= characters.concat(specialChars);
 }
 console.log("2",characters)
 //numbers
-
+var numbers= confirm("do you want numbers?");
+if(numbers){
+    var addNumbers=["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+    pwdNumbers= pwdNumbers.concat(addNumbers);
+}
 //lowercase
-
-//upperase
+var lowercase= confirm("do you want lowercase letters?");
+if(lowercase){
+    var addLowercase=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    pwdLowercase= pwdLowercase.concat(addLowercase);
+    console.log("1", pwdLowercase);
+}
+//uppercase
+var uppercase= confirm("do you want uppercase letters?");
+if(uppercase){
+    var addUppercase=["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+    pwdUppercase= pwdUppercase.concat(addUppercase);
+    console.log("2", pwdUppercase);
+}
 
 //create the password
 let password=""
