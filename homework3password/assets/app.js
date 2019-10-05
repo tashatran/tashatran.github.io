@@ -9,9 +9,17 @@ var pwdLowercase =[];
 var pwdUppercase =[];
 console.log("1",characters)
 
+
 var passLength= prompt("How long is your password gonna be?")//TODO: input validation
 console.log("passLength",passLength)
 console.log( typeof passLength)//TODO change string to number parseInt()
+
+if (passLength < 8) {
+    alert("Password length must be at least 8 characters long");
+}
+else if (passLength > 128) {
+    alert("Password length cannot be longer than 128 characters");
+}
 
 var special= confirm("do you want special characters?");//return boolean
 if(special){
@@ -41,6 +49,7 @@ if(uppercase){
     console.log("2", pwdUppercase);
 }
 
+
 //create the password
 let password=""
     // for loop for number of characters
@@ -53,4 +62,18 @@ let password=""
         //password=password+ whatever
 
     }
+
+
+
 console.log("password",password)
+
+//copy to clipboard
+function copyPassword(){
+    
+    document.getElementById("password").select();
+    
+    document.execCommand("Copy");
+    
+    alert("Password has been copied");
+
+}
