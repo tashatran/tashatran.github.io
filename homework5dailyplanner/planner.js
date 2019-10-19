@@ -38,4 +38,4 @@ $("#hour-9 .description").val(localStorage.getItem("hour-9"));
         $(this).addClass("future")
       };
     });
-    //run the function every minute: setInterval(function, 60000)
+    
