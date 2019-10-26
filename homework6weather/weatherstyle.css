@@ -6,3 +6,12 @@ h1{
     padding: 30px;
 }
 
+.cityinfo{
+   
+   background-color: rgb(245, 247, 248);
+   
+}
+
+.searchbutton{
+    float: right;
+}

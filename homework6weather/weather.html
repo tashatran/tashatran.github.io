@@ -12,40 +12,45 @@
     <link rel="stylesheet" href="./weatherstyle.css" />
 </head>
 
-
+<h1>Weather Dashboard</h1>
 <body>
-
-        <h1>Weather Dashboard</h1>
-       
+    
 <div class="container">
     <div class="row">
-        <div class="col-md-3">
-            <h5>Search for a city:</h5>
-                <form>
-            
-                    <input id="cityname" type="text">
-                    <button id="searchbutton">
-                     <i class="fa fa-search" aria-hidden="true"></i>
-                    </button>
-                
-                </form>
+        <div class="col-md-4 cityinfo">
+             <h5>Search for a city:</h5>
+             <form>
+                <input id="cityname" type="text">
+                <button id="searchbutton">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+             </form>
+        </div>
+
+        <div class="col-md-8 weekforecast">
+            <div class="city"></div>
+            <div class="temp"></div>
+            <div class="humidity"></div>
+            <div class="wind"></div>
+            <div class="uv"></div>
         </div>
     </div>
 
-        <div class="col-md-9">
-                <div class="city"></div>
-                <div class="temp"></div>
-                <div class="humidity"></div>
-                <div class="wind"></div>
-                <div class="uv"></div>
-            <div id="fiveday"> five day forecast</div>
-        </div>
+
+
+
+
+</div>
+       
+
+
+        
 
 
 
 
     
- </div>   
+  
 <script src="https://code.jquery.com/jquery-3.4.1.js"integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 <script src="./weatherjava.js"></script>
 </body>

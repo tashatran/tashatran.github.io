@@ -1,6 +1,6 @@
 console.log("test");
 
-var searchbutton = $("#searchbar").val()
+var searchbutton = $("#cityname").val().trim()
 var key = "0d8116c0f30e53d8c4fe80c830b71edf"
 
 
@@ -16,7 +16,7 @@ function weatherResults(cityname){
   
        
         console.log(response);
-        // Create CODE HERE to transfer content to HTML
+        
   
         $(".city").text(response.name);
         $(".temp").text(((response.main.temp - 273.15) * 1.80 + 32).toFixed(0) + "Fahrenheit");
