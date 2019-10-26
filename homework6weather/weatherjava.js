@@ -47,6 +47,8 @@ function weatherResults(cityname){
 
     }
 
+    
+
     $("#searchbutton").on("click", function (event) {
         event.preventDefault()
         var value = $("#cityname").val().trim();
@@ -56,15 +58,20 @@ function weatherResults(cityname){
       })
 
       function postForecast(forecastObject){
+        var newDiv = $('<div>').html(`
+        <div class='card'>
+        <h2>${forecastObject.dt_txt}</h2>
+        <p>Humidity: ${forecastObject.main.humidity}</p>
+        <p>Temperature:${((forecastObject.main.temp - 273.15) * 1.80 + 32).toFixed(0)}</p>
+        <p>Condition:${forecastObject.weather[0].description}</p>
+        </div>
+        
+        
+        `)
+
+        
+
         let future= $(".future")
-        var newDiv=$('<div>')
-        newDiv.text(forecastObject.dt_txt)//TODO uses moment to format the date
-        let humidity=$("<p>").text(`Humidity :${forecastObject.main.humidity}`)
-        newDiv.append(humidity)
-        let temp=$("<p>").text(`Temperature is: ${((forecastObject.main.temp - 273.15) * 1.80 + 32).toFixed(0)}`)
-        newDiv.append(temp)
-        let weather=$("<p>").text(`Weather:${forecastObject.weather[1]}`)
-        newDiv.append(weather)
         future.append(newDiv)
 
       }
