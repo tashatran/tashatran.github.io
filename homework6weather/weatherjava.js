@@ -6,7 +6,7 @@ var key = "0d8116c0f30e53d8c4fe80c830b71edf"
 
 
 function weatherResults(cityname){
-    var searchURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityname + "&appid="+key//0d8116c0f30e53d8c4fe80c830b71edf"
+    var searchURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityname + "&appid="+key//0d8116c0f30e53d8c4fe80c830b71edf"
     console.log(searchURL)
 
     $.ajax({
@@ -24,7 +24,7 @@ function weatherResults(cityname){
         $(".humidity").text(response.main.humidity);
         $(".wind").text(response.wind.speed);
   
-        $.ajax({url:`http://api.openweathermap.org/data/2.5/forecast?q=${cityname}&mode=json&appid=${key}`}).then(function(forecastResult){
+        $.ajax({url:`https://api.openweathermap.org/data/2.5/forecast?q=${cityname}&mode=json&appid=${key}`}).then(function(forecastResult){
           console.log(forecastResult)
           console.log(forecastResult.list[3])
           console.log(forecastResult.list[11])
