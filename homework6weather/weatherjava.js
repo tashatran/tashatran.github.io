@@ -3,14 +3,15 @@ console.log("test");
 var searchbutton = $("#cityname").val().trim()
 var key = "0d8116c0f30e53d8c4fe80c830b71edf"
 
-
+var proxy = "https://chriscastle.com/proxy/index.php?:proxy:";
 
 function weatherResults(cityname){
     var searchURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityname + "&appid="+key//0d8116c0f30e53d8c4fe80c830b71edf"
     console.log(searchURL)
 
     $.ajax({
-        url: searchURL,
+      url: proxy + searchURL,
+      dataType: 'json',
         method: "GET"
       }).then(function(response) {
   
@@ -24,7 +25,10 @@ function weatherResults(cityname){
         $(".humidity").text(response.main.humidity);
         $(".wind").text(response.wind.speed);
   
-        $.ajax({url:`https://api.openweathermap.org/data/2.5/forecast?q=${cityname}&mode=json&appid=${key}`}).then(function(forecastResult){
+        $.ajax({ 
+          dataType: 'json',
+          url: proxy +`https://api.openweathermap.org/data/2.5/forecast?q=${cityname}&mode=json&appid=${key}`
+        }).then(function(forecastResult){
           console.log(forecastResult)
           console.log(forecastResult.list[3])
           console.log(forecastResult.list[11])
