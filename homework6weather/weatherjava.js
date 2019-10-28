@@ -55,11 +55,17 @@ function weatherResults(cityname){
         console.log(value)
         weatherResults(value)
         //TODO push value into local storage
+
+        localStorage.setItem("cityname");
+        document.getElementById("#cityname").innerHTML = localStorage.getItem("");
       })
 
       function postForecast(forecastObject){
+       
         var newDiv = $('<div>').html(`
+        
         <div class='card'>
+
         <h2>${forecastObject.dt_txt}</h2>
         <p>Humidity: ${forecastObject.main.humidity}</p>
         <p>Temperature:${((forecastObject.main.temp - 273.15) * 1.80 + 32).toFixed(0)}</p>
