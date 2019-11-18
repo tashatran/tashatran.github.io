@@ -25,7 +25,7 @@ const colors = {
   }
 };
 
-//EX ${colors[data.color].wrapperbackground}
+// ${colors[data.color].wrapperbackground}
 
 function generateHTML(data) {
     console.log(data)
@@ -49,7 +49,7 @@ function generateHTML(data) {
                 margin-top: 45px;
                 border-radius: 15px;
                 position: relative;
-                background-color: white;
+                background-color:  ${colors[data.color].headerBackground};
                 max-width: 960px;
                 margin: auto;
                 }
@@ -84,7 +84,7 @@ function generateHTML(data) {
                 }
     
                 body{
-                    background-color:white;
+                    background-color:${colors[data.color].wrapperBackground};
                 }
     
                 
@@ -158,42 +158,59 @@ function generateHTML(data) {
      <h3>${data.response.bio ? `${data.response.bio}` : " "} </h3>
     </div>
     
-        <div class="infoCards">
-                <!-- pubic repo -->
-                <div class="float">
-                    <div id="publicRepo">
-                        <h4>Public Repositories</h4>
-                        <p>${data.response.public_repos}</p>
-                    </div>
+    <div class="container">
+        
+    <div class="infoCards">
+      <div class="row">
+          <div class="col-md-6">
+            <!-- pubic repo -->
+            <div class="float">
+                <div id="publicRepo">
+                    <h4>Public Repositories</h4>
+                    <p>5</p>
                 </div>
-                                    
-                <!--  followers -->
-                <div class="float">
-                    <div id="followers">
-                        <h4>Followers</h4>
-                        <p>${data.response.followers}</p>
-                    </div>           
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <!--  followers -->
+            <div class="float">
+                <div id="followers">
+                    <h4>Followers</h4>
+                    <p>3</p>
+                </div>           
+            </div>
+          </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6">
+            <!-- stars -->
+            <div class="float">
+                <div id="stars">
+                <h4>GitHub Stars</h4>
+                <p> None</p>
                 </div>
-                <!-- stars -->
-                <div class="float">
-                    <div id="stars">
-                    <h4>GitHub Stars</h4>
-                    <p> ${data.response.stars ? `${data.response.stars}` : "None"}</p>
-                    </div>
-                </div>
-                <!-- following -->
-                <div class="float">
-                    <div id="following">
-                    <h4>Following</h4>
-                    <p>${data.response.following}</p>
-                    </div>
-                </div>
-    
+            </div>
         </div>
-                        
-    </body>
-    
-    </html>`;
+
+        <div class="col-md-6">
+            <!-- following -->
+            <div class="float">
+                <div id="following">
+                <h4>Following</h4>
+                <p>6</p>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+</div>                   
+</body>
+
+</html>`;
   }
 
 module.exports = generateHTML;
