@@ -25,7 +25,7 @@ const colors = {
   }
 };
 
-// ${colors[data.color].wrapperbackground}
+
 
 function generateHTML(data) {
     console.log(data)
