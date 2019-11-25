@@ -2,32 +2,6 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 
 
-// inquirer.prompt([
-//     {
-//       type: "input",
-//       name: "managerName",
-//       message: "What is your manager's name?",
-//     },
-  
-  
-
-  
-//     {
-//       type: "input",
-//       name: "managerId",
-//       message: "What is your manager's ID?",
-//     },
-//     {
-//       type: "input",
-//       name: "managerEmail",
-//       message: "What is your manager's email?",
-//     },
-//     {
-//       type: "input",
-//       name: "managerOfficeNumber",
-//       message: "What is your manager's office ID?",
-//     },
-//   ]);
   
   
 function askUser() {
@@ -239,9 +213,13 @@ function askUser() {
 
 };
 
-const output= require("./output.js")
-output()
+// const output= require("./output.js")
+// output()
 
+// function createTeam(){
+    
+//     fs.writeFileSync(outputPath, render(teamMembers), "utf-8")
+// }
 askUser();
 // async function init(){
 //   let myEmployess = []
