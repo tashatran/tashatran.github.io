@@ -21,7 +21,10 @@ app.post('/api/notes', function (req, res) {
   console.log(req.body)
   //write the data to db.json
     //fs.write
-})
+    let data = JSON.stringify(notes);
+    fs.writeFile("./db/db.json", data);
+
+
 app.delete('/api/notes/:id', function(req, res){
   console.log(req.params.id)
 })
