@@ -22,38 +22,30 @@ var connection = mysql.createConnection({
   });
 
 
-// var app = express()
-// var PORT= process.env.PORT || 8000
-
-// app.get('/', function(req,res){
-//     res.send("hello world")
-// })
-
-// app.listen(PORT, function(){
-//     console.log("we're developing on port"+PORT)
-// })
-function doSomething(){
+function ask(){
 return inquirer.prompt({
     type: "list",
     name: "switch",
     message: "what do you want to do?",
     choices: [
-        "view all employess",
+        "view all employees",
 
         "Add departments", "add roles", "add employees"
 
         // View departments, roles, employees
         
         // Update employee roles
+        
     ]
 })
+
 }
  function switcher(){
-   doSomething().then(answer=>{
+   ask().then(answer=>{
        console.log(answer)
     
        switch (answer.switch) {
-           case 'view all employess':
+           case 'view all employees':
                console.log("lets view them all")
                viewAllEmployees()
                break;
@@ -72,4 +64,5 @@ function viewAllEmployees(){
         console.table(res)
     })
 }
-switcher()
+switcher();
+
