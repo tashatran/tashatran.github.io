@@ -1,5 +1,9 @@
 body {
     background-color: brown;
+    
+}
+
+.content{
     text-align: center;
 }
 
@@ -7,3 +11,8 @@ h1 {
     color: white;
 }
 
+img {
+    width: 200px;
+    height: auto;
+    
+}
