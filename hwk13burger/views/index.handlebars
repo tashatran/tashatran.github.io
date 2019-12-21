@@ -1,6 +1,10 @@
 <h1>make a burger</h1>
+
 <input class="order" type="text" name="" id="">
-<h3 id="grill">GRILL IT</h3>
+
+<button id="grill">
+    Grill
+</button>
 
 <h1>These are the burgers</h1>
 
@@ -10,7 +14,9 @@
 <h3 data-id={{this.id}}>{{this.burger_name}}</h3>
 {{/unless}}
 {{/each}}
-<h2>belly</h2>
+
+<br>
+<h2>BELLY</h2>
 {{#each burgers}}
 {{#if this.devoured}}
 <h3 data-id={{this.id}}>{{this.burger_name}}</h3>
@@ -19,6 +25,7 @@
 
 <script>
 //when #grill gets clicked, send off a post request to "/", 
+
 //in your callback, location.reload()
 
 </script>
