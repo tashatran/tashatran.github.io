@@ -120,7 +120,15 @@ hr{
     font-size: 40px;
   }
 
+  .projthree{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+  }
   
+  .projfour{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+  }
 
   @media only screen and (max-width: 640px) {
     /* For small devices: */
