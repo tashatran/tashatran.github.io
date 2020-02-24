@@ -1,0 +1,259 @@
+body {
+    background-color:#adccc7;
+    font-family: 'Poppins';
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .questions {
+    font-size: 30px;
+    color: #111d5e;
+  }
+  
+  button {
+    margin-top: 30px;
+  }
+  
+  #btn0,
+  #btn1,
+  #btn2,
+  #btn3 {
+    background-color: lavenderblush;
+    width: 250px;
+    font-size: 20px;
+    color: darkslategray;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+  }
+  
+  #verify {
+    color: lightslategray;
+    font-size: 18px;
+  }
+  
+  #btn0:hover,
+  #btn1:hover,
+  #btn2:hover,
+  #btn3:hover {
+    cursor: pointer;
+    background-color: lightcyan;
+    font-family: 'Poppins', ;
+  }
+  
+  #btn0:focus,
+  #btn1:focus,
+  #btn2:focus,
+  #btn3:focus {
+    outline: 0;
+  }
+  
+
+  
+  header {
+    font-family: 'Poppins';
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+
+
+  }
+  
+  #timerContainer {
+    width: 200px;
+    margin: 0 auto;
+    font-size: 24px;
+    color: white;
+    font-family: 'Poppins', ;
+  }
+  
+  .wrapper {
+    width: 960px;
+    height: 375px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color:#adccc7;
+    
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 8px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Poppins';
+    
+  }
+
+  h2{
+      text-align: center;
+      color: white;
+      font-family: 'Poppins';
+  }
+  
+  h5 {
+    text-align: center;
+    padding: 8px;
+    margin-top: 20px;
+    color:#144c52;
+    font-family: 'Poppins';
+  }
+  
+  .result {
+    margin-left: 75px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .high-score {
+    text-align: center;
+    margin: 20px, 0;
+  }
+  
+  #startQuiz {
+    margin-left: 290px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    
+    font-size: 24px;
+    background-color:#adccc7;
+    color: white;
+    text-align: center;
+    width: 40%;
+    font-family: 'Poppins';
+  }
+  
+  .remove {
+    display: none;
+  }
+  
+  .card {
+    margin: 0 auto;
+    text-align: center;
+    background-color:#adccc7;
+    font-family: 'Poppins';
+  }
+  
+  .start-over {
+    background-color: #111d5e;
+    color: white;
+    text-align: center;
+    width: 25%;
+    font-family: 'Poppins';
+    margin-left: 300px;
+  }
+  
+  .clear {
+    background-color: #adccc7;
+    color: white;
+    text-align: center;
+    width: 25%;
+    font-family: 'Poppins';
+   
+  }
+  
+  .users {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 25%;
+ 
+  }
+  
+  
+    #startQuiz {
+      width: 50%;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      margin-left: 250px;
+    }
+  
+  
+  
+  
+    #startQuiz {
+      width: 50%;
+      margin-top: 10px;
+      margin-left: 175px;
+    }
+  
+    .clear {
+      background-color:#adccc7;
+      color: white;
+      text-align: center;
+      width: 25%;
+      margin-left: 290px;
+      font-family: 'Poppins';
+    }
+  
+    .start-over {
+      background-color:#adccc7;
+      color: white;
+      text-align: center;
+      width: 25%;
+      margin-left: 290px;
+      font-family: 'Poppins';
+    }
+    .card {
+      margin: 0 auto;
+      text-align: center;
+    }
+  
+  
+
+  
+    h1 {
+      margin-top: 20px;
+     
+    }
+  
+    h5 {
+      margin-top: 10px;
+    }
+  
+    #startQuiz {
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+  
+    .start-over {
+      background-color:#adccc7;
+      color: white;
+      text-align: center;
+      width: 25%;
+      margin-left: 185px;
+      font-family: 'Poppins';
+    }
+  
+    .clear {
+      background-color:#adccc7;
+      color: white;
+      text-align: center;
+      width: 25%;
+      
+      margin-left: 185px;
+      margin-bottom: 15px;
+    }
+  
+    .users {
+      margin: 0 auto;
+      margin-bottom: 15px;
+      width: 50%;
+      
+    }
+  
+    .card {
+      margin: 0 auto;
+      text-align: center;
+      font-family: 'Poppins';
+      
+    }
+  
+    #ques1 {
+      margin-left: 100px;
+    }
+  

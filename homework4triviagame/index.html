@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <title> Random Trivia </title>
+  </head>
+
+  <body>
+    <header>
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="triviaHead">
+            Random Multiple Choice questions
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="timerContainer">
+            Timer: 0
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="triviaTitle"> Can you answer this?</h2>
+          <h5 class="intro">
+           Lets do this!
+          </h5>
+        </div>
+      </div>
+
+      <!--List for scores-->
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="users"></ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <button class="start-over" onClick="window.location.reload();">
+            Go Back
+          </button>
+        </div>
+
+        <div class="col-md-6">
+          <button class="clear">Clear Scores</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <form class="enter-score">
+            Initials:<input type="text" class="initials" />
+            <input type="button" class="record" value="Submit" />
+          </form>
+        </div>
+      </div>
+
+      <!--quiz buttons-->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <button id="ques1" class="op remove"></button>
+            <button id="ques2" class="op remove"></button>
+            <button id="ques3" class="op remove"></button>
+            <button id="ques4" class="op remove"></button>
+            <!--Start Quiz button-->
+            <button id="startQuiz">Start</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="result"></div>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <!--Linking javaScript files-->
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+  </body>
+</html>
